@@ -1,3 +1,4 @@
+console.log("ID\tName\tSalary\thrs\tpay\tFT/PT")
 class Employee{
     constructor(n, a){
         this.name = n;
@@ -32,10 +33,10 @@ class Demo{
     constructor(){
         this.Manager = Manager;
         this.PartTime = PartTime; 
-        this.EmployeeArray =[ID, Name, Salary, hrs, pay, FT/PT,
-            1, Scott, 19800, 40, 10, FullTime,
-            2, Dave, 9400, 40, 5, FullTime,
-            3, Lisa, 4992, 12, 6, PartTime,
+        this.EmployeeArray =[
+            1, "Scott", 19800, 40, 10, "FullTime",
+            2, "Dave", 9400, 40, 5, "FullTime",
+            3, "Lisa", 4992, 12, 6, "PartTime",
         ];
     }
     displayMenu(){ 
