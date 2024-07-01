@@ -30,7 +30,13 @@ class PartTime extends Employee{
 
 class Demo{
     constructor(){
-
+        this.Manager = Manager;
+        this.PartTime = PartTime; 
+        this.EmployeeArray =[ID, Name, Salary, hrs, pay, FT/PT,
+            1, Scott, 19800, 40, 10, FullTime,
+            2, Dave, 9400, 40, 5, FullTime,
+            3, Lisa, 4992, 12, 6, PartTime,
+        ];
     }
     displayMenu(){ 
         let choice = Number(prompt("Main Menu\n1. Add Employee\n2. Remove Employee\n3. Edit Employee\n4. Display Employees"))
@@ -44,15 +50,26 @@ class Demo{
             case 4: this.displayEmployee();
             break;
         }
+       
     }
-    addEmployee(){}
+    addEmployee(){
+        let data = prompt("Please type employee information in this format (name, age, payrate, hours per week")
 
-    removeEmployee(){}
+        
+    }
 
-    editEmployee(){}
-    displayEmployee(){}
+    removeEmployee(){
+
+    }
+
+    editEmployee(){
+
+    }
+    displayEmployee(){
+    }
+
 }
 
-(e=>{
+(() => {
     const demo = new Demo();
 })();
